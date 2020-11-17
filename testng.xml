@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="depLocation" value="Mexico City" />
+	<parameter name="arrLocation" value="London" />
+	<parameter name="inputName" value="venu" />
+	<parameter name="address" value="123 data" />
+	<parameter name="city" value="chennai" />
+	<parameter name="state" value="Tamil Nadu" />
+	<parameter name="zipCode" value="123456" />
+	<parameter name="cardType" value="Diner's Club" />
+	<parameter name="creditCardNumber" value="1234856" />
+	<parameter name="creditCardMonth" value="12" />
+	<parameter name="creditCardYear" value="2020" />
+	<parameter name="nameOnCard" value="venu" />
+
+	<parameter name="nameOnCard" value="venu" />
+	<test name="Test">
+		<classes>
+			<class name="org.stepdef.BookingModule" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

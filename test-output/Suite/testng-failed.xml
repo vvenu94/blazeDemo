@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="zipCode" value="123456"/>
+  <parameter name="address" value="123 data"/>
+  <parameter name="city" value="chennai"/>
+  <parameter name="nameOnCard" value="venu"/>
+  <parameter name="creditCardNumber" value="1234856"/>
+  <parameter name="cardType" value="Diner&#039;s Club"/>
+  <parameter name="creditCardMonth" value="12"/>
+  <parameter name="arrLocation" value="London"/>
+  <parameter name="state" value="Tamil Nadu"/>
+  <parameter name="creditCardYear" value="2020"/>
+  <parameter name="depLocation" value="Mexico City"/>
+  <parameter name="inputName" value="venu"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="org.stepdef.BookingModule">
+        <methods>
+          <include name="flightSelectionPage"/>
+          <include name="closeBrowser"/>
+          <include name="homePage"/>
+          <include name="paymentPage" invocation-numbers="0"/>
+          <include name="pageLaunch"/>
+        </methods>
+      </class> <!-- org.stepdef.BookingModule -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
